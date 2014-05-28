@@ -70,4 +70,3 @@ h() {
 	#echo "$_COMMAND"
 	cat - | eval $_COMMAND
 }
-
