@@ -44,7 +44,7 @@ h() {
 	shift $(($OPTIND - 1))
 
 	# check maximum allowed input
-	if (( ${#@} > 12)); then
+	if (( ${#@} > 10)); then
 		echo "Too many terms. h supports a maximum of 12 groups. Consider relying on regular expression supported patterns like \"word1\\|word2\""
 		exit -1
 	fi;
@@ -55,7 +55,7 @@ h() {
 	local _i=0
 
 	#inverted-colors-last scheme
-	_COLORS=( "bold red" "bold green" "bold yellow" "bold blue" "bold magenta" "bold cyan" "bold on_red" "bold on_green" "bold black on_yellow" "bold on_blue" "bold on_cyan" "bold on_magenta" )
+	_COLORS=( "bold red" "bold green" "bold yellow" "bold blue" "bold magenta" "bold cyan" "bold on_red" "bold on_green" "bold black on_yellow" "bold on_blue" "bold on_magenta" "bold on_magenta" )
 	#inverted-colors-first scheme
 	#_COLORS=( "bold on_red" "bold on_green" "bold black on_yellow" "bold on_blue" "bold on_magenta" "bold on_cyan" "bold black on_white" "bold red" "bold green" "bold yellow"	"bold blue" "bold magenta" )
 
