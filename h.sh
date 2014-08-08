@@ -44,7 +44,7 @@ h() {
 	shift $(($OPTIND - 1))
 
 	# check maximum allowed input
-	if (( ${#@} > 10)); then
+	if (( ${#@} > 12)); then
 		echo "Too many terms. h supports a maximum of 12 groups. Consider relying on regular expression supported patterns like \"word1\\|word2\""
 		exit -1
 	fi;
@@ -62,7 +62,7 @@ h() {
 	# build the filtering command
 	for keyword in "$@"
 	do
-		local _COMMAND=$_COMMAND"ack $_OPTS --noenv --flush --passthru --color --color-match=\"${_COLORS[$_i]}\" $keyword |"
+		local _COMMAND=$_COMMAND"ack $_OPTS --noenv --flush --passthru --color --color-match=\"${_COLORS[$_i]}\" '$keyword' |"
 		_i=$_i+1
 	done
 	#trim ending pipe
