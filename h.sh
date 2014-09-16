@@ -55,7 +55,7 @@ h() {
 	local _i=0
 
 	#inverted-colors-last scheme
-	_COLORS=( "bold red" "bold green" "bold yellow" "bold blue" "bold magenta" "bold cyan" "bold on_red" "bold on_green" "bold black on_yellow" "bold on_blue" "bold on_magenta" "bold on_magenta" )
+	_COLORS=( "bold red" "bold green" "bold yellow" "bold blue" "bold magenta" "bold cyan" "bold on_red" "bold on_green" "bold black on_yellow" "bold on_blue" "bold on_magenta" "bold on_cyan" "bold black on_white" )
 	#inverted-colors-first scheme
 	#_COLORS=( "bold on_red" "bold on_green" "bold black on_yellow" "bold on_blue" "bold on_magenta" "bold on_cyan" "bold black on_white" "bold red" "bold green" "bold yellow"	"bold blue" "bold magenta" )
 
